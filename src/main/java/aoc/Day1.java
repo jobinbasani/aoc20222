@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.TreeSet;
 
 // https://adventofcode.com/2022/day/1
@@ -23,7 +24,7 @@ public class Day1 {
 
   public int execute(int countToReturn) {
 
-    TreeSet<Integer> calories = new TreeSet<>(Comparator.reverseOrder());
+    Set<Integer> calories = new TreeSet<>(Comparator.reverseOrder());
 
     int total = 0;
     for (String line : inputData) {
