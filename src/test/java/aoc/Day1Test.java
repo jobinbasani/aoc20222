@@ -10,7 +10,7 @@ import java.io.InputStream;
 
 class Day1Test {
   @Test
-  @DisplayName("Test day 1 part 1&2")
+  @DisplayName("Test Day 1 part 1&2")
   public void testCalories() throws IOException {
     InputStream in = Day1.class.getClassLoader().getResourceAsStream("day1/example.txt");
     Day1 d = new Day1(in);
