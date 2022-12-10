@@ -8,12 +8,11 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-class Day1Test {
+class Day2Test {
   @Test
-  @DisplayName("Test Day 1 part 1&2")
+  @DisplayName("Test Day 2")
   public void testCalories() throws IOException {
-    Day1 d = new Day1(Util.readFileToList("day1/example.txt"));
-    assertEquals(24000,d.execute(1));
-    assertEquals(41000,d.execute(3));
+    Day2 d = new Day2(Util.readFileToList("day2/example.txt"));
+    assertEquals(15,d.getScore(true));
   }
 }
